@@ -126,7 +126,7 @@ main .card h2 span{
         transform: translateY(0);
     }
 }
-@media (min-width: 930px) {
+@media (min-width: 700px) {
     .container{
         max-width: 117rem;
         padding: 0 5rem;
