@@ -66,6 +66,13 @@ main .card img{
     height: 41.6rem;
     object-fit: cover;
     border-radius: 6px;
+    transition: all 200ms;
+    filter: brightness(0.5);
+}
+
+img:hover{
+    transform: scale(1.1);
+    filter: brightness(1);
 }
 
 main .card h2{
