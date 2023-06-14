@@ -102,6 +102,7 @@ main .card h2 span{
     width: fit-content;
 }
 
+
 @keyframes topdown{
     0%{
         opacity: 0;
