@@ -126,3 +126,22 @@ main .card h2 span{
         transform: translateY(0);
     }
 }
+
+@media (min-width: 700px) {
+    .container{
+        max-width: 117rem;
+        padding: 0 5rem;
+    }
+    
+    main{
+        grid-template-areas: "A A B"
+        "C C D";
+    }
+    
+    header h1{
+        font-size: 5.6rem;
+        letter-spacing: -1px;
+        line-height: 6.4rem;
+        margin-top: 2rem;
+    }
+}
