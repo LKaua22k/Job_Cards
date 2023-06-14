@@ -29,6 +29,7 @@ img{
 .container{
     max-width: 33rem;
     margin: 0 auto;
+    padding: 0 2ren;
 }
 
 header{
@@ -138,8 +139,6 @@ main .card h2 span{
 
 }
 @media (min-width: 930px) {
-
-    
     main{
         grid-template-areas: "A B B"
         "C C D";
