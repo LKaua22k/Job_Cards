@@ -137,6 +137,22 @@ main .card h2 span{
         grid-template-areas: "A A B"
         "C C D";
     }
+
+    main div:nth-child(1){
+        grid-area: A;
+    }
+    
+    main div:nth-child(2){
+        grid-area: B;
+    }
+
+    main div:nth-child(3){
+        grid-area: C;
+    }
+
+    main div:nth-child(4){
+        grid-area: D;
+    }
     
     header h1{
         font-size: 5.6rem;
