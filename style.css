@@ -23,16 +23,18 @@ body{
 
 img{
     width: 100%;
+    height: auto;
 }
 
 .container{
-    max-width: 32.9rem;
+    max-width: 33rem;
     margin: 0 auto;
 }
 
 header{
     margin: 10rem 0 8rem;
     text-align: center;
+    animation: topdown 700ms backwards;
 }
 
 header p{
@@ -46,13 +48,14 @@ header h1{
     font-size: 4rem;
     font-weight: 800;
     line-height: 4.8rem;
-    margin-top: 1.7rem;
+    margin-top: 1.7rem; 
 }
 
 main{
     display: grid;
     gap: 3.2rem;
     margin-bottom: 10.5rem;
+    animation: downtop 700ms 400ms backwards;
 }
 
 main .card{
@@ -67,15 +70,51 @@ main .card img{
 
 main .card h2{
     position: absolute;
-    bottom: 5.1rem;
+    bottom: 5.2rem;
     left: 2.8rem;
     display: flex;
     flex-direction: column;
-    gap: 2.3rem;
+    gap: 3rem;
+    font-size: 4rem;
+    line-height: 4.2rem;
+    font-weight: 800;
+
 }
 
 main .card h2 span{
     font-size: 1.6rem;
     font-weight: 400;
-    color: var();
+    color: var(--tt-darck);
+    line-height: 3.2rem;
+    background-color: var(--tt-light);
+    height: 3.8rem;
+    padding: 0 1.6rem;
+    border-radius: 1.9rem;
+    display: inline-flex;
+    align-items: center ;
+    width: fit-content;
+}
+
+@keyframes topdown{
+    0%{
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop{
+    0%{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
